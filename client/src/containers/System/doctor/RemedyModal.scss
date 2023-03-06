@@ -1,0 +1,23 @@
+.booking-modal-header {
+  padding: 10px 10px;
+  border-bottom: 1px solid rgb(117, 117, 117);
+  .left {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  .right {
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.1rem;
+
+    transition: linear 0.2s;
+    color: orange;
+    &:hover {
+      transform: scale(1);
+      color: rgb(0, 0, 0);
+      transform: scale(0.9) rotate(90deg);
+    }
+  }
+}

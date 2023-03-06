@@ -1,0 +1,47 @@
+.modal-user-container {
+  .modal-header {
+    .close {
+      background-color: transparent;
+      border: none;
+      font-size: 2rem;
+      color: #ddd;
+    }
+  }
+  .modal-body {
+    .input-row {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      input {
+        padding: 5px;
+        border: 1px solid grey;
+        outline: grey;
+        border-radius: 5px !important;
+      }
+
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+      .select-group {
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .select-col {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .input-address {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+}

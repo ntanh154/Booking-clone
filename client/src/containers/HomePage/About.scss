@@ -1,0 +1,48 @@
+.section-about {
+  height: 400px;
+  width: 100%;
+  padding: 45px 0;
+  background: rgb(245, 245, 245);
+  .about-content {
+    width: 80%;
+    margin: auto;
+
+    .about-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0 5px 0;
+      margin-bottom: 10px;
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      button {
+        color: rgb(41, 40, 40);
+        border: none;
+        background: #ebebeb;
+        width: 90px;
+        height: 36px;
+        &:hover {
+          color: white;
+          background-color: #f7d800;
+        }
+      }
+    }
+    .about-body {
+      height: 264px;
+      display: flex;
+
+      .about-body_left {
+        flex: 50%;
+
+        overflow: hidden;
+        float: left;
+      }
+      .about-body_right {
+        flex: 50%;
+        float: right;
+        padding: 3px 10px 0;
+      }
+    }
+  }
+}

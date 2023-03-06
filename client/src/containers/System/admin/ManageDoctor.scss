@@ -1,0 +1,26 @@
+.manage-doctor-container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+  .manage-doctor-title {
+    margin-bottom: 20px;
+  }
+  .more-info {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    .content-left {
+      width: 30%;
+    }
+    .content-right {
+      width: 70%;
+    }
+  }
+  .manage-doctor-editor {
+    padding-bottom: 10px;
+  }
+  .btn-manage-doctor {
+    padding: 0 5px;
+  }
+}

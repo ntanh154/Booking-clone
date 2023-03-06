@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .btn {
+            border-radius: 5px;
+            cursor: pointer;
+            width: 8rem;
+            outline: none;
+            border: none;
+        }
+
+        .btn-edit {
+            background-color: orange;
+        }
+
+        .btn-delete {
+            background-color: rgb(241, 138, 138);
+        }
+
+        .btn-create {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Bordered Table</h2>
+                <p>The .table-bordered class adds borders to a table:</p>
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th>email</th>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>address</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i=0; i < data.length; i++) { %>
+                            <tr>
+
+                                <td>
+                                    <%= data[i].email %>
+                                </td>
+
+                                <td>
+                                    <%= data[i].firstName %>
+                                </td>
+                                <td>
+                                    <%= data[i].lastName %>
+                                </td>
+                                <td>
+                                    <%= data[i].address %>
+                                </td>
+                                <td>
+                                    <a href="/edit-crud?id=<%=data[i].id%>" class="btn btn-edit" type="button">Edit</a>
+                                    <a href="/delete-crud?id=<%=data[i].id%>" class="btn btn-delete"
+                                        type="button">Delete</a>
+                                </td>
+                            </tr>
+                            <% } %>
+
+                    </tbody>
+                </table>
+                <a href="/crud" class="btn btn-create" type="button">Add User</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+.container {
+  height: auto;
+
+  .user-table {
+    .table-container {
+      height: 300px !important;
+      overflow-y: scroll !important;
+      position: relative;
+      ::-webkit-scrollbar {
+        margin-top: 10px;
+      }
+
+      .customers {
+        position: absolute;
+
+        .table-head {
+          position: fixed;
+          z-index: 999;
+          display: table;
+        }
+        .table-body {
+          position: absolute;
+          top: 46px;
+        }
+      }
+    }
+  }
+
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #customers td,
+  #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 184px;
+  }
+
+  #customers tr:nth-child(even) {
+    background-color: rgba(221, 221, 221, 0.116);
+  }
+
+  #customers tr:hover {
+    background-color: rgba(221, 221, 221, 0.315);
+  }
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0071ba;
+    color: white;
+  }
+  .container-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .btn {
+      background-color: transparent;
+      transform: scale(0.8);
+      transition: linear all 0.2s;
+      width: 20px;
+    }
+    .btn-edit {
+      color: rgb(103, 115, 115);
+      &:hover {
+        transform: scale(1);
+      }
+    }
+
+    .btn-delete {
+      color: rgb(180, 74, 7);
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+}

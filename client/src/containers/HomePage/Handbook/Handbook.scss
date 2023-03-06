@@ -1,0 +1,111 @@
+.section-handbook {
+  height: 285px;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #efeef5;
+  box-sizing: border-box;
+  .handbook-content {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    .handbook-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0 5px 0;
+      margin-bottom: 20px;
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      button {
+        color: rgb(41, 40, 40);
+        border: none;
+        background: #ebebeb;
+        width: 100px;
+        height: 36px;
+        &:hover {
+          color: white;
+          background-color: #f7d800;
+        }
+      }
+    }
+
+    .slick-slider {
+      height: 160px;
+      width: 100%;
+
+      .slider-customize {
+        width: 100%;
+        height: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        color: #333;
+        &:hover {
+          color: rgb(170, 250, 250);
+        }
+
+        img {
+          height: 100%;
+          width: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .handbook-desc {
+          overflow: hidden;
+          padding: 3px 10px 0 10px;
+          width: 50%;
+          h3 {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+            line-height: 1.8rem;
+          }
+        }
+      }
+
+      .slick-arrow {
+        top: 40%;
+        transform: translateY(-50%);
+        z-index: 99;
+        width: 40px;
+        height: 40px;
+
+        border: 2px solid rgb(195, 193, 193);
+        outline: none;
+        background: transparent;
+
+        &.slick-prev {
+          &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+
+            content: "\f053";
+            font-size: 2rem;
+            color: rgba(122, 120, 120, 0.315);
+          }
+          &:hover {
+            color: rgba(59, 58, 58, 0.836);
+          }
+        }
+        &.slick-next {
+          &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+
+            content: "\f054";
+            font-size: 2rem;
+            color: rgba(122, 120, 120, 0.315);
+          }
+          &:hover {
+            color: rgba(59, 58, 58, 0.836);
+          }
+        }
+      }
+    }
+  }
+}

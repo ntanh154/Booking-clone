@@ -1,0 +1,36 @@
+.intro-doctor {
+  display: flex;
+  padding: 5px 0;
+  .see-more {
+    font-size: 1.1rem;
+    color: aqua;
+    cursor: pointer;
+  }
+  .content-left {
+    width: 20%;
+    .doctor-image {
+      width: 90px;
+      height: 90px;
+      margin: auto;
+      border-radius: 50%;
+
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    }
+  }
+  .content-right {
+    width: 80%;
+
+    padding-left: 10px;
+    .up {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .down {
+      padding-top: 5px;
+    }
+  }
+}
